@@ -1,0 +1,9 @@
+.fair-venv/
+venv
+.vscode
+*cache*
+Veronet/data
+Veronet_algorithm/.env
+htmlcov
+src/data/images
+src/models/artifact

@@ -1,0 +1,44 @@
+PRIMA
+--- Selezione modalità clinica (train) ---
+Input (head):
+       Label   AGE  PTEDUCAT  ...  FLDSTRENG_3 Tesla MRI  FLDSTRENG_nan  image_path
+2152     2.0  75.1        18  ...                    0.0            0.0         NaN
+9336     1.0  74.8        18  ...                    0.0            1.0         NaN
+3647     2.0  72.0        16  ...                    1.0            0.0         NaN
+11492    3.0  71.4        20  ...                    0.0            1.0         NaN
+9876     1.0  74.2        20  ...                    0.0            1.0         NaN
+
+[5 rows x 48 columns]
+
+Output:
+        AGE  PTEDUCAT  ADAS11  ...  FLDSTRENG_1.5 Tesla MRI  FLDSTRENG_3 Tesla MRI  FLDSTRENG_nan
+2152   75.1        18    7.33  ...                      1.0                    0.0            0.0
+9336   74.8        18   10.00  ...                      0.0                    0.0            1.0
+3647   72.0        16   18.00  ...                      0.0                    1.0            0.0
+11492  71.4        20     NaN  ...                      0.0                    0.0            1.0
+9876   74.2        20   11.33  ...                      0.0                    0.0            1.0
+
+[5 rows x 46 columns]
+----------------------------------------
+
+--- Selezione modalità immagini (train) ---
+Input (head):
+       Label   AGE  PTEDUCAT  ...  FLDSTRENG_3 Tesla MRI  FLDSTRENG_nan  image_path
+2152     2.0  75.1        18  ...                    0.0            0.0         NaN
+9336     1.0  74.8        18  ...                    0.0            1.0         NaN
+3647     2.0  72.0        16  ...                    1.0            0.0         NaN
+11492    3.0  71.4        20  ...                    0.0            1.0         NaN
+9876     1.0  74.2        20  ...                    0.0            1.0         NaN
+
+[5 rows x 48 columns]
+
+Output:
+                                            image_path
+5461   src/data/images/processed_005_S_0929_I53858.pkl
+1731   src/data/images/processed_027_S_0835_I73770.pkl
+2211  src/data/images/processed_002_S_1070_I160754.pkl
+440   src/data/images/processed_027_S_0179_I138175.pkl
+1224   src/data/images/processed_005_S_0553_I35240.pkl
+----------------------------------------
+
+DOPO
